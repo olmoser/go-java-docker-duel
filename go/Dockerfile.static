@@ -1,0 +1,8 @@
+# Create a minimal container to run a Golang static binary
+
+FROM gliderlabs/alpine:3.2
+EXPOSE 8080
+
+ADD main /
+
+CMD ["/main"]
